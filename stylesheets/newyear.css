@@ -1,0 +1,836 @@
+/* line 1, ../sass/newyear.scss */
+body {
+  font-size: 156.25%;
+  font-family: 'Conv_NeoSansPro-Light';
+  color: #333333;
+}
+/* line 6, ../sass/newyear.scss */
+body .clearfix {
+  clear: both;
+}
+/* line 10, ../sass/newyear.scss */
+body .size_1 {
+  font-size: 1.32em;
+}
+/* line 14, ../sass/newyear.scss */
+body .size_2 {
+  font-size: 1.66em;
+}
+/* line 18, ../sass/newyear.scss */
+body .size_3 {
+  font-size: 2em;
+}
+/* line 22, ../sass/newyear.scss */
+body .size_4 {
+  font-size: 4em;
+}
+/* line 26, ../sass/newyear.scss */
+body .size_small {
+  font-size: 0.66em;
+}
+/* line 30, ../sass/newyear.scss */
+body .light {
+  font-family: 'Conv_NeoSansPro-Light';
+}
+/* line 34, ../sass/newyear.scss */
+body .regular {
+  font-family: 'Conv_NeoSansPro-Regular';
+}
+/* line 38, ../sass/newyear.scss */
+body .centered {
+  text-align: center;
+}
+/* line 42, ../sass/newyear.scss */
+body a {
+  color: white;
+}
+/* line 45, ../sass/newyear.scss */
+body a:hover {
+  text-decoration: none;
+}
+/* line 50, ../sass/newyear.scss */
+body p, body span {
+  line-height: 1.2em;
+}
+/* line 54, ../sass/newyear.scss */
+body h2 {
+  font-size: 2.32em;
+  padding: 0.2em 0.5em 0.1em;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  border-radius: 0.25em;
+  margin-bottom: 0.5em;
+}
+/* line 63, ../sass/newyear.scss */
+body h2.green {
+  background-color: #66cc00;
+}
+/* line 67, ../sass/newyear.scss */
+body h2.blue {
+  background-color: #0099cc;
+}
+/* line 72, ../sass/newyear.scss */
+body h3 {
+  color: white;
+  font-family: 'Conv_NeoSansPro-Regular';
+  font-size: 2em;
+  padding: 0.5em;
+  line-height: 1.2em;
+}
+/* line 79, ../sass/newyear.scss */
+body h3.white {
+  background: white;
+  color: #333333;
+}
+/* line 85, ../sass/newyear.scss */
+body form {
+  padding: 0 4.8em;
+}
+/* line 88, ../sass/newyear.scss */
+body form label {
+  color: white;
+  width: 8em;
+  text-align: right;
+  display: inline-block;
+}
+/* line 94, ../sass/newyear.scss */
+body form label.error {
+  display: block;
+  width: auto;
+  text-align: left;
+  margin-left: 8.7em;
+  color: red;
+  margin-bottom: 0.85em;
+  margin-top: -0.5em;
+}
+/* line 104, ../sass/newyear.scss */
+body form label[for="message"] {
+  vertical-align: top;
+  top: 0.5em;
+}
+/* line 110, ../sass/newyear.scss */
+body form input[type="text"], body form input[type="email"], body form textarea {
+  padding: 0.4em 0.4em 0.3em;
+  border-radius: 0.25rem;
+  border: 1px solid #929292;
+  font-family: 'Conv_NeoSansPro-Light';
+  font-size: 1em;
+  color: #333333;
+  width: 595px;
+  margin-bottom: 0.85em;
+}
+/* line 120, ../sass/newyear.scss */
+body form input[type="text"]:-moz-placeholder, body form input[type="email"]:-moz-placeholder, body form textarea:-moz-placeholder {
+  color: #999999;
+}
+/* line 124, ../sass/newyear.scss */
+body form input[type="text"]::-webkit-input-placeholder, body form input[type="email"]::-webkit-input-placeholder, body form textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+/* line 128, ../sass/newyear.scss */
+body form input[type="text"]:focus, body form input[type="email"]:focus, body form textarea:focus {
+  outline: none;
+}
+/* line 133, ../sass/newyear.scss */
+body form input[type="submit"] {
+  cursor: pointer;
+  color: white;
+  font-family: 'Conv_NeoSansPro-Medium';
+  position: relative;
+  margin-bottom: 0.85em;
+  width: 616px;
+}
+/* line 141, ../sass/newyear.scss */
+body form input[type="submit"]:focus {
+  outline: none;
+}
+/* line 147, ../sass/newyear.scss */
+body .wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+/* line 154, ../sass/newyear.scss */
+body .wrapper header {
+  height: 778px;
+}
+/* line 157, ../sass/newyear.scss */
+body .wrapper header .top_line {
+  padding: 0.64em 0;
+}
+/* line 160, ../sass/newyear.scss */
+body .wrapper header .top_line .logo, body .wrapper header .top_line p, body .wrapper header .top_line .order {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 166, ../sass/newyear.scss */
+body .wrapper header .top_line .logo {
+  vertical-align: bottom;
+}
+/* line 169, ../sass/newyear.scss */
+body .wrapper header .top_line .logo a {
+  margin-left: 2em;
+  color: #333333;
+  padding: 1.2em 1em 0;
+  background: url(../images/logo.png) no-repeat 50% 0%;
+}
+/* line 177, ../sass/newyear.scss */
+body .wrapper header .top_line p {
+  text-align: center;
+}
+/* line 181, ../sass/newyear.scss */
+body .wrapper header .top_line .order {
+  text-align: right;
+  top: 0.2em;
+}
+/* line 185, ../sass/newyear.scss */
+body .wrapper header .top_line .order a {
+  margin-right: 2em;
+  font-size: 1em;
+}
+/* line 192, ../sass/newyear.scss */
+body .wrapper header .top_offer {
+  height: 645px;
+  background: url(../images/bg_top_offer.jpg) no-repeat 50% 50%;
+  padding: 0 2em;
+  color: white;
+}
+/* line 198, ../sass/newyear.scss */
+body .wrapper header .top_offer .phone_number, body .wrapper header .top_offer .goods {
+  float: left;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+/* line 206, ../sass/newyear.scss */
+body .wrapper header .top_offer .goods {
+  text-align: left;
+  margin-left: -2em;
+  padding-left: 2em;
+}
+/* line 211, ../sass/newyear.scss */
+body .wrapper header .top_offer .goods a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 215, ../sass/newyear.scss */
+body .wrapper header .top_offer .goods a:hover {
+  text-decoration: none;
+}
+/* line 221, ../sass/newyear.scss */
+body .wrapper header .top_offer .phone_number {
+  text-align: right;
+  margin-right: -2em;
+  padding-right: 2em;
+}
+/* line 229, ../sass/newyear.scss */
+body .wrapper header .top_offer .button_box .blue {
+  margin-left: 2em;
+}
+/* line 233, ../sass/newyear.scss */
+body .wrapper header .top_offer .button_box .green {
+  margin-right: 2em;
+}
+/* line 239, ../sass/newyear.scss */
+body .wrapper header .menu {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  width: 1280px;
+}
+/* line 244, ../sass/newyear.scss */
+body .wrapper header .menu ul {
+  text-align: center;
+}
+/* line 247, ../sass/newyear.scss */
+body .wrapper header .menu ul li {
+  margin: 0.3em 0.4em;
+  display: inline-block;
+}
+/* line 251, ../sass/newyear.scss */
+body .wrapper header .menu ul li a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* line 255, ../sass/newyear.scss */
+body .wrapper header .menu ul li a:hover {
+  text-decoration: none;
+}
+/* line 266, ../sass/newyear.scss */
+body .wrapper section .map {
+  background: url(../images/map.jpg) no-repeat 90% 0%;
+  height: 660px;
+}
+/* line 270, ../sass/newyear.scss */
+body .wrapper section .map p, body .wrapper section .map h4 {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+/* line 275, ../sass/newyear.scss */
+body .wrapper section .map h4 {
+  font-size: 1.65em;
+  line-height: 1.2em;
+  margin: 0.6em 0;
+}
+/* line 281, ../sass/newyear.scss */
+body .wrapper section .map p {
+  border-radius: 0.25em;
+  position: absolute;
+  padding: 0.3em 0.5em 0.3em;
+}
+/* line 286, ../sass/newyear.scss */
+body .wrapper section .map p.city_1, body .wrapper section .map p.city_2 {
+  display: inline-block;
+  padding: 0.3em 0.5em 0.3em;
+}
+/* line 291, ../sass/newyear.scss */
+body .wrapper section .map p.city_1 {
+  top: 230px;
+  left: 70px;
+}
+/* line 296, ../sass/newyear.scss */
+body .wrapper section .map p.city_2 {
+  top: 310px;
+  left: 40px;
+}
+/* line 301, ../sass/newyear.scss */
+body .wrapper section .map p.city_list {
+  width: 100%;
+  bottom: 1em;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 310, ../sass/newyear.scss */
+body .wrapper section .detales {
+  background: url(../images/tracery_l.png) no-repeat 5% 50%, url(../images/tracery_r.png) no-repeat 95% 50%;
+  padding: 1.35em 0;
+}
+/* line 314, ../sass/newyear.scss */
+body .wrapper section .detales span {
+  background-color: #66cc00;
+  padding: 0.05em;
+  color: white;
+  text-transform: uppercase;
+}
+/* line 322, ../sass/newyear.scss */
+body .wrapper section .price {
+  text-align: center;
+  display: inline-block;
+  margin: 5em 2em 0;
+  color: white;
+}
+/* line 329, ../sass/newyear.scss */
+body .wrapper section #ny_bowl_order, body .wrapper section #ready_sets_order, body .wrapper section #consultation_order {
+  background: url(../images/arrows.png) no-repeat 50% 95% #cccccc;
+}
+/* line 332, ../sass/newyear.scss */
+body .wrapper section #ny_bowl_order a, body .wrapper section #ready_sets_order a, body .wrapper section #consultation_order a {
+  color: #0066ff;
+}
+/* line 336, ../sass/newyear.scss */
+body .wrapper section #ny_bowl_order .description, body .wrapper section #ready_sets_order .description, body .wrapper section #consultation_order .description {
+  padding-left: 13em;
+  margin: 1.2em 0;
+  line-height: 1.2em;
+}
+/* line 342, ../sass/newyear.scss */
+body .wrapper section #ny_bowl_order p, body .wrapper section #ready_sets_order p, body .wrapper section #consultation_order p {
+  text-align: center;
+  padding-bottom: 1em;
+}
+/* line 349, ../sass/newyear.scss */
+body .wrapper section #consultation_order .description {
+  padding-left: 11.5em;
+  padding-top: 1em;
+}
+/* line 355, ../sass/newyear.scss */
+body .wrapper section #ny_bowl {
+  margin-bottom: 1.5em;
+}
+/* line 358, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_offer {
+  background: url(../images/bg_ny_bowl_offer.jpg) no-repeat 50% 50%;
+  height: 750px;
+}
+/* line 362, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_offer h3 {
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 367, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_color {
+  background: url(../images/bg_ny_bowl_color.jpg) no-repeat 50% 50%;
+  height: 862px;
+}
+/* line 371, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_color p {
+  position: absolute;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.1em 0.5em;
+  color: white;
+}
+/* line 378, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_color p:first-child {
+  top: 182px;
+  left: 21px;
+}
+/* line 383, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_color p:last-child {
+  top: 612px;
+  left: 600px;
+  text-align: right;
+}
+/* line 391, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_composition {
+  background: url(../images/bg_ny_bowl_composition.jpg) no-repeat 50% 50%;
+  height: 748px;
+}
+/* line 396, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_reasons {
+  background: url(../images/bg_ny_bowl_reasons.jpg) no-repeat 50% 50%;
+  height: 1090px;
+  padding: 1em 2em;
+}
+/* line 401, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_reasons h3 {
+  padding: 0.5em 0em;
+  text-align: right;
+}
+/* line 406, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_reasons p {
+  color: white;
+  text-align: right;
+}
+/* line 412, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_delivery {
+  background: url(../images/bg_ny_bowl_delivery.jpg) no-repeat 50% 50%;
+  height: 750px;
+}
+/* line 416, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_delivery .shipping {
+  padding-left: 50%;
+  padding-top: 2em;
+  color: white;
+}
+/* line 421, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_delivery .shipping a {
+  margin: 1.5em 0 1em;
+}
+/* line 428, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_milestones h3 {
+  color: #66cc00;
+}
+/* line 432, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_milestones ul {
+  padding: 0 2em;
+  line-height: 1.2em;
+}
+/* line 437, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_milestones ul.icons li {
+  color: #66cc00;
+}
+/* line 440, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_milestones ul.icons li img {
+  vertical-align: middle;
+}
+/* line 446, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_milestones ul li {
+  width: 32.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 455, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_milestones p span:first-child {
+  color: #66cc00;
+}
+/* line 461, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_video {
+  text-align: center;
+}
+/* line 464, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_video h3 {
+  color: #333333;
+}
+/* line 468, ../sass/newyear.scss */
+body .wrapper section #ny_bowl .ny_bowl_video iframe {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+/* line 474, ../sass/newyear.scss */
+body .wrapper section #ready_sets {
+  margin-bottom: 1.5em;
+}
+/* line 477, ../sass/newyear.scss */
+body .wrapper section #ready_sets .chocolate_1, body .wrapper section #ready_sets .chocolate_2, body .wrapper section #ready_sets .chocolate_3, body .wrapper section #ready_sets .chocolate_4, body .wrapper section #ready_sets .new_year_cards_1, body .wrapper section #ready_sets .new_year_cards_review_1, body .wrapper section #ready_sets .new_year_cards_2, body .wrapper section #ready_sets .new_year_cards_review_2, body .wrapper section #ready_sets .new_year_cards_3, body .wrapper section #ready_sets .decor_set_1, body .wrapper section #ready_sets .decor_set_2 {
+  height: 853px;
+}
+/* line 483, ../sass/newyear.scss */
+body .wrapper section #ready_sets .chocolate_1 p, body .wrapper section #ready_sets .chocolate_3 p, body .wrapper section #ready_sets .decor_set_1 p {
+  position: absolute;
+  bottom: 1em;
+  text-align: right;
+  color: white;
+  right: 50px;
+}
+/* line 494, ../sass/newyear.scss */
+body .wrapper section #ready_sets .chocolate_2 .description, body .wrapper section #ready_sets .chocolate_4 .description, body .wrapper section #ready_sets .decor_set_2 .description {
+  position: absolute;
+  top: 1em;
+  right: 50px;
+  color: white;
+  text-align: right;
+}
+/* line 502, ../sass/newyear.scss */
+body .wrapper section #ready_sets .chocolate_2 .price, body .wrapper section #ready_sets .chocolate_4 .price, body .wrapper section #ready_sets .decor_set_2 .price {
+  position: absolute;
+  bottom: 3em;
+}
+/* line 507, ../sass/newyear.scss */
+body .wrapper section #ready_sets .chocolate_2 .button_box, body .wrapper section #ready_sets .chocolate_4 .button_box, body .wrapper section #ready_sets .decor_set_2 .button_box {
+  bottom: 2.5em;
+}
+/* line 512, ../sass/newyear.scss */
+body .wrapper section #ready_sets .chocolate_1 {
+  background: url(../images/bg_chocolate_1.jpg) no-repeat 50% 50%;
+}
+/* line 516, ../sass/newyear.scss */
+body .wrapper section #ready_sets .chocolate_2 {
+  background: url(../images/bg_chocolate_2.jpg) no-repeat 50% 50%;
+}
+/* line 520, ../sass/newyear.scss */
+body .wrapper section #ready_sets .chocolate_3 {
+  background: url(../images/bg_chocolate_3.jpg) no-repeat 50% 50%;
+}
+/* line 524, ../sass/newyear.scss */
+body .wrapper section #ready_sets .chocolate_4 {
+  background: url(../images/bg_chocolate_4.jpg) no-repeat 50% 50%;
+  margin-bottom: 1.5em;
+}
+/* line 529, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_1 {
+  background: url(../images/new.png) no-repeat 0 0, url(../images/bg_new_year_cards_1.jpg) no-repeat 50% 50%;
+}
+/* line 532, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_1 .description {
+  position: absolute;
+  top: 6em;
+  right: 50px;
+  color: white;
+  text-align: right;
+}
+/* line 540, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_1 .price {
+  position: absolute;
+  bottom: 3em;
+}
+/* line 545, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_1 .button_box {
+  bottom: 2em;
+}
+/* line 550, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_2 {
+  background: url(../images/bg_new_year_cards_2.jpg) no-repeat 50% 50%;
+}
+/* line 553, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_2 .description_1, body .wrapper section #ready_sets .new_year_cards_2 .description_2, body .wrapper section #ready_sets .new_year_cards_2 .description_3 {
+  position: absolute;
+  color: white;
+  text-align: right;
+}
+/* line 559, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_2 .description_1 {
+  top: 5.5em;
+  right: 50px;
+}
+/* line 564, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_2 .description_2 {
+  top: 7em;
+  left: 50px;
+  text-align: left;
+}
+/* line 570, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_2 .description_3 {
+  top: 19em;
+  right: 50px;
+}
+/* line 575, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_2 .price {
+  position: absolute;
+  bottom: 3em;
+}
+/* line 580, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_2 .button_box {
+  bottom: 2em;
+}
+/* line 585, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_3 {
+  background: url(../images/bg_new_year_cards_3.jpg) no-repeat 50% 50%;
+  margin-bottom: 1.5em;
+}
+/* line 589, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_3 .description {
+  position: absolute;
+  color: white;
+  text-align: right;
+  bottom: 2.5em;
+  right: 2em;
+}
+/* line 597, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_3 .price {
+  position: absolute;
+  bottom: 4.5em;
+  text-align: right;
+}
+/* line 602, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_3 .price p:last-child {
+  font-size: 3em;
+}
+/* line 605, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_3 .price p:last-child span {
+  text-decoration: line-through;
+}
+/* line 611, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_3 .button_box {
+  bottom: 2em;
+}
+/* line 617, ../sass/newyear.scss */
+body .wrapper section #ready_sets .new_year_cards_review_1 img, body .wrapper section #ready_sets .new_year_cards_review_2 img {
+  float: left;
+}
+/* line 622, ../sass/newyear.scss */
+body .wrapper section #ready_sets .decor_set_1 {
+  background: url(../images/bg_decor_set_1.jpg) no-repeat 50% 50%;
+}
+/* line 626, ../sass/newyear.scss */
+body .wrapper section #ready_sets .decor_set_2 {
+  background: url(../images/bestseller.png) no-repeat 0 0, url(../images/bg_decor_set_2.jpg) no-repeat 50% 50%;
+}
+/* line 631, ../sass/newyear.scss */
+body .wrapper section #ready_sets .ready_sets_milestones h3 {
+  color: #0099cc;
+}
+/* line 635, ../sass/newyear.scss */
+body .wrapper section #ready_sets .ready_sets_milestones ul {
+  padding: 0 2em;
+  line-height: 1.2em;
+}
+/* line 640, ../sass/newyear.scss */
+body .wrapper section #ready_sets .ready_sets_milestones ul.icons li {
+  color: #0099cc;
+}
+/* line 643, ../sass/newyear.scss */
+body .wrapper section #ready_sets .ready_sets_milestones ul.icons li img {
+  vertical-align: middle;
+}
+/* line 649, ../sass/newyear.scss */
+body .wrapper section #ready_sets .ready_sets_milestones ul li {
+  width: 32.5%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 658, ../sass/newyear.scss */
+body .wrapper section #ready_sets .ready_sets_milestones p span:first-child {
+  color: #0099cc;
+}
+/* line 666, ../sass/newyear.scss */
+body .wrapper section #feedbacks a {
+  color: #0066ff;
+}
+/* line 671, ../sass/newyear.scss */
+body .wrapper section #feedbacks hgroup h3 {
+  color: #333333;
+  padding-bottom: 0;
+}
+/* line 676, ../sass/newyear.scss */
+body .wrapper section #feedbacks hgroup p {
+  margin-bottom: 1em;
+}
+/* line 681, ../sass/newyear.scss */
+body .wrapper section #feedbacks .slidesjs-previous, body .wrapper section #feedbacks .slidesjs-next {
+  display: block;
+  width: 4em;
+  height: 4em;
+  position: absolute;
+  top: 50%;
+  margin-top: -2em;
+  color: transparent;
+  z-index: 100;
+}
+/* line 692, ../sass/newyear.scss */
+body .wrapper section #feedbacks .slidesjs-previous {
+  background: url(../images/slide_arrow_l.png) no-repeat 50% 50%;
+  left: 1.5em;
+}
+/* line 697, ../sass/newyear.scss */
+body .wrapper section #feedbacks .slidesjs-next {
+  background: url(../images/slide_arrow_r.png) no-repeat 50% 50%;
+  right: 1.5em;
+}
+/* line 702, ../sass/newyear.scss */
+body .wrapper section #feedbacks .feedback {
+  padding: 2em 6.5em;
+  background: #cccccc;
+}
+/* line 706, ../sass/newyear.scss */
+body .wrapper section #feedbacks .feedback .person, body .wrapper section #feedbacks .feedback .feedback_text {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 711, ../sass/newyear.scss */
+body .wrapper section #feedbacks .feedback .person {
+  width: 10em;
+}
+/* line 714, ../sass/newyear.scss */
+body .wrapper section #feedbacks .feedback .person img {
+  border-radius: 5em;
+  margin-bottom: 0.5em;
+}
+/* line 720, ../sass/newyear.scss */
+body .wrapper section #feedbacks .feedback .feedback_text {
+  width: 24em;
+  background: url(../images/tail.png) no-repeat 0 4em;
+  padding-left: 3.76em;
+}
+/* line 725, ../sass/newyear.scss */
+body .wrapper section #feedbacks .feedback .feedback_text p {
+  padding: 1.5em 1em;
+  background-color: white;
+  border-radius: 1.5em;
+}
+/* line 735, ../sass/newyear.scss */
+body .wrapper section #team h3 {
+  color: #333333;
+}
+/* line 739, ../sass/newyear.scss */
+body .wrapper section #team ul {
+  padding: 2em 4em;
+  background: #cccccc;
+}
+/* line 743, ../sass/newyear.scss */
+body .wrapper section #team ul li {
+  display: inline-block;
+  width: 14em;
+}
+/* line 747, ../sass/newyear.scss */
+body .wrapper section #team ul li img {
+  border-radius: 5em;
+}
+/* line 755, ../sass/newyear.scss */
+body .wrapper section #contacts a {
+  color: #0066ff;
+}
+/* line 759, ../sass/newyear.scss */
+body .wrapper section #contacts .address {
+  background: url(../images/g_map.jpg) no-repeat 50% 50%;
+  height: 315px;
+  padding-top: 1em;
+}
+/* line 764, ../sass/newyear.scss */
+body .wrapper section #contacts .address .address_box {
+  border-radius: 1.5em;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  padding: 0 1em 1em;
+}
+/* line 770, ../sass/newyear.scss */
+body .wrapper section #contacts .address .address_box h3 {
+  color: #333333;
+}
+/* line 777, ../sass/newyear.scss */
+body .wrapper section #contacts .personal_contacts ul {
+  display: inline-block;
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  padding: 1.5em 0;
+}
+/* line 783, ../sass/newyear.scss */
+body .wrapper section #contacts .personal_contacts ul li {
+  display: inline-block;
+  width: 15em;
+}
+/* line 790, ../sass/newyear.scss */
+body .wrapper section #contacts .socials {
+  padding: 1em 0;
+}
+/* line 793, ../sass/newyear.scss */
+body .wrapper section #contacts .socials a, body .wrapper section #contacts .socials p {
+  display: inline-block;
+}
+/* line 797, ../sass/newyear.scss */
+body .wrapper section #contacts .socials p {
+  padding: 0 2em;
+}
+/* line 805, ../sass/newyear.scss */
+body footer {
+  background: #666666;
+  position: relative;
+  padding-top: 1em;
+}
+/* line 810, ../sass/newyear.scss */
+body footer .border {
+  border-top: 2px solid white;
+  height: 2px;
+  border-bottom: 1px solid white;
+}
+/* line 816, ../sass/newyear.scss */
+body footer .inner {
+  padding: 1em 0;
+  margin: 0 auto;
+  color: white;
+  width: 1280px;
+}
+/* line 822, ../sass/newyear.scss */
+body footer .inner div {
+  padding: 0 2em;
+  margin-bottom: 1em;
+}
+/* line 826, ../sass/newyear.scss */
+body footer .inner div:last-child {
+  margin-bottom: 0;
+}
+/* line 830, ../sass/newyear.scss */
+body footer .inner div ul, body footer .inner div p {
+  display: inline-block;
+  text-align: center;
+}
+/* line 835, ../sass/newyear.scss */
+body footer .inner div ul {
+  text-align: left;
+}
+/* line 839, ../sass/newyear.scss */
+body footer .inner div p:not(.size_small) {
+  width: 755px;
+}
+/* line 843, ../sass/newyear.scss */
+body footer .inner div p:last-child {
+  text-align: right;
+}
+/* line 848, ../sass/newyear.scss */
+body footer .inner div.copyright p:first-child {
+  text-align: left;
+  width: 1040px;
+}
+
+/* line 858, ../sass/newyear.scss */
+.hidden {
+  display: none;
+}
+
+/* line 862, ../sass/newyear.scss */
+.response {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+/* line 867, ../sass/newyear.scss */
+.response .close {
+  display: block;
+  width: 81px;
+  height: 86;
+  background: url(../images/close.png) no-repeat 50% 50%;
+}
