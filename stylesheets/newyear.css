@@ -134,7 +134,7 @@ body form input[type="text"]:focus, body form input[type="email"]:focus, body fo
   outline: none;
 }
 /* line 134, ../sass/newyear.scss */
-body form input[type="submit"] {
+body form button {
   cursor: pointer;
   color: white;
   font-family: 'Conv_NeoSansPro-Medium';
@@ -143,7 +143,7 @@ body form input[type="submit"] {
   width: 616px;
 }
 /* line 142, ../sass/newyear.scss */
-body form input[type="submit"]:focus {
+body form button:focus {
   outline: none;
 }
 /* line 148, ../sass/newyear.scss */
@@ -765,67 +765,86 @@ body footer {
   background: #666666;
   position: relative;
   padding-top: 1em;
+  width: 100%;
+  min-width: 1280px;
 }
-/* line 804, ../sass/newyear.scss */
+/* line 806, ../sass/newyear.scss */
 body footer .border {
   border-top: 2px solid white;
   height: 2px;
   border-bottom: 1px solid white;
 }
-/* line 810, ../sass/newyear.scss */
+/* line 812, ../sass/newyear.scss */
 body footer .inner {
   padding: 1em 0;
   margin: 0 auto;
   color: white;
   width: 1280px;
 }
-/* line 816, ../sass/newyear.scss */
+/* line 818, ../sass/newyear.scss */
 body footer .inner div {
-  padding: 0 2em;
+  padding: 0 4%;
   margin-bottom: 1em;
 }
-/* line 820, ../sass/newyear.scss */
+/* line 822, ../sass/newyear.scss */
 body footer .inner div:last-child {
   margin-bottom: 0;
 }
-/* line 824, ../sass/newyear.scss */
+/* line 826, ../sass/newyear.scss */
 body footer .inner div ul, body footer .inner div p {
   display: inline-block;
   text-align: center;
 }
-/* line 829, ../sass/newyear.scss */
+/* line 831, ../sass/newyear.scss */
 body footer .inner div ul {
   text-align: left;
 }
-/* line 833, ../sass/newyear.scss */
-body footer .inner div p:not(.size_small) {
+/* line 835, ../sass/newyear.scss */
+body footer .inner div p.company {
   width: 755px;
 }
-/* line 837, ../sass/newyear.scss */
+/* line 839, ../sass/newyear.scss */
 body footer .inner div p:last-child {
   text-align: right;
 }
-/* line 842, ../sass/newyear.scss */
+/* line 844, ../sass/newyear.scss */
 body footer .inner div.copyright p:first-child {
   text-align: left;
   width: 1040px;
 }
 
-/* line 852, ../sass/newyear.scss */
+/* line 854, ../sass/newyear.scss */
 .hidden {
   display: none;
 }
 
-/* line 856, ../sass/newyear.scss */
+/* line 858, ../sass/newyear.scss */
 .response {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  text-align: center;
 }
-/* line 861, ../sass/newyear.scss */
+/* line 867, ../sass/newyear.scss */
+.response .popup {
+  border-radius: 0.5em;
+  padding: 2em;
+  background: white;
+  margin: -80px auto 0;
+  top: 50%;
+  display: inline-block;
+}
+/* line 876, ../sass/newyear.scss */
 .response .close {
   display: block;
   width: 81px;
-  height: 86;
+  height: 86px;
   background: url(../images/close.png) no-repeat 50% 50%;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  cursor: pointer;
 }

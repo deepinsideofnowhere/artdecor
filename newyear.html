@@ -27,20 +27,45 @@
         $("#ready_sets_order_form").validate();
         $("#consultation_order_form").validate();
 
-        $('form').submit(function (event) {
+        $('.close').click(function() {
+          $('.response').addClass('hidden');
+        });
+
+        $('#ny_bowl_order_form').submit(function (event) {
           event.preventDefault();
 
           if ($(this).valid()) {
             $.ajax('', { data: $(this).serialize() }, {
               dataType: 'jsonp'
             });
+            $(this)[0].reset();
             $('.response').removeClass('hidden');
           }
         });
 
-        // $(".close")click(
-        //   $(".response").addClass('hidden')
-        // );
+        $('#ready_sets_order_form').submit(function (event) {
+          event.preventDefault();
+
+          if ($(this).valid()) {
+            $.ajax('', { data: $(this).serialize() }, {
+              dataType: 'jsonp'
+            });
+            $(this)[0].reset();
+            $('.response').removeClass('hidden');
+          }
+        });
+
+        $('#consultation_order_form').submit(function (event) {
+          event.preventDefault();
+
+          if ($(this).valid()) {
+            $.ajax('', { data: $(this).serialize() }, {
+              dataType: 'jsonp'
+            });
+            $(this)[0].reset();
+            $('.response').removeClass('hidden');
+          }
+        });
 
         $('#slides').slidesjs({
           height: 360,
@@ -309,7 +334,7 @@
               </div>
               <div>
                 <label></label>
-                <input class="green" value="Отправить заявку" type="submit"/>
+                <button class="green" type="submit" href="#1">Отправить заявку</button>
               </div>
             </form>
             <p class="size_small">
@@ -675,7 +700,7 @@
               </div>
               <div>
                 <label></label>
-                <input class="blue" value="Отправить заявку" type="submit"/>
+                <button class="blue" type="submit" href="#2">Отправить заявку</button>
               </div>
             </form>
             <p class="size_small">
@@ -766,7 +791,7 @@
             </div>
             <div>
               <label></label>
-              <input class="yellow" value="Заказать консультацию" type="submit"/>
+              <button class="yellow" type="submit" href="#3">Заказать консультацию</button>
             </div>
           </form>
           <p class="size_small">
@@ -938,25 +963,25 @@
 
     <footer>
       <div class="border"></div>
-      <div class="inner">
+      <div class="inner size_small">
         <div>
-          <ul class="size_small">
+          <ul>
             <li><a href="http://artdecor.pro">Главная</a></li>
             <li><a href="">Блог</a></li>
             <li><a href="">Политика конфидециальности</a></li>
           </ul>
-          <p>Мастреская новогодних подарков<br>дизайнера Анохиной Маргариты.</p>
-          <p class="size_small">Понравился сайт?<br><a href="http://artdecor.pro/newyear" rel="sidebar" onclick="addBookmark()">Добавьте сайт в закладки</a></p>
+          <p class="company size_2">Мастреская новогодних подарков<br>дизайнера Анохиной Маргариты.</p>
+          <p>Понравился сайт?<br><a href="http://artdecor.pro/newyear" rel="sidebar" onclick="addBookmark()">Добавьте сайт в закладки</a></p>
         </div>
         <div class="copyright">
-          <p class="size_small">
+          <p>
             &copy; Copyright 2014г.
             <br>
             Все права защищены. Компания АртДекорПро.
             <br>
             Копирование материалов разрешено, при обязательном указании ссылки на источник.
           </p>
-          <p class="size_small">
+          <p>
             Дизайн сайта:
             <br>
             <a class="regular" href="http://vk.com/anokhindimas">Дмитрий Анохин</a>
@@ -966,7 +991,7 @@
     </footer>
     <div class="response hidden">
       <div class="popup">
-        <p class="thanks">Спасибо за Ваш заказ!<span>В ближайщее время<br>Вам перезвонят.</span></p>
+        <p class="thanks">Спасибо за заказ!<br>Наш менеджер свяжется с вами и уточнит все детали.</p>
         <a class="close"></a>
       </div>
     </div>
