@@ -19,11 +19,13 @@
     <script type="text/javascript">
       $(function () {
 
-        $("#phone").mask("+9 (999) 999-99-99");
+        $("#phone_1, #phone_2, #phone_3").mask("+9 (999) 999-99-99");
 
         $("input[name=email_confirmation], label[for=email_confirmation]").hide();
 
-        $("form").validate();
+        $("#ny_bowl_order_form").validate();
+        $("#ready_sets_order_form").validate();
+        $("#consultation_order_form").validate();
 
         $('form').submit(function (event) {
           event.preventDefault();
@@ -67,8 +69,10 @@
       <header>
         <a id="top"></a>
         <div class="top_line">
-          <div class="logo">
-            <a href="http://artdecor.pro/newyear">artdecor.pro / newyear</a>
+          <div class="logo centered">
+            <a href="http://artdecor.pro/newyear"><img src="images/logo.png"></a>
+            <br>
+            <a href="http://artdecor.pro">artdecor.pro</a> / <a href="http://artdecor.pro/newyear">newyear</a>
           </div>
           <p>мастерская новогодних подарков дизайнера Анохиной Маргариты</p>
           <div class="order">
@@ -136,7 +140,7 @@
 
         <div id="ny_bowl">
           <hgroup class="centered">
-            <h2 class="green">
+            <h2 class="green_h">
               Именной ёлочный шар
             </h2>
           </hgroup>
@@ -282,7 +286,7 @@
                 <li>3. Расчитаем общую сумму вашего заказа.</li>
               </ul>
             </div>
-            <form method="post" action="#order_ny_bowl">
+            <form method="post" action="#order_ny_bowl" id="ny_bowl_order_form">
               <div>
                 <label for="name">*Ваше Имя:</label>
                 <input class="required" name="name" type="text" placeholder="Маргарита"/>
@@ -297,7 +301,7 @@
               </div>
               <div>
                 <label for="phone_number">*Ваш телефон:</label>
-                <input class="required" name="phone_number" type="text" id="phone" placeholder="+ 7 (123) 456-78-90"/>
+                <input class="required" name="phone_number" type="text" id="phone_1" placeholder="+ 7 (123) 456-78-90"/>
               </div>
               <div>
                 <label for="message">Комментарий:</label>
@@ -385,7 +389,7 @@
 
           <div id="chocolate">
             <hgroup class="centered">
-              <h2 class="blue">
+              <h2 class="blue_h">
                 Шоколадки с пожеланиями
               </h2>
             </hgroup>
@@ -481,7 +485,7 @@
 
           <div id="new_year_cards">
             <hgroup class="centered">
-              <h2 class="blue">
+              <h2 class="blue_h">
                 Набор новогодних открыток
               </h2>
             </hgroup>
@@ -595,7 +599,7 @@
 
           <div id="decor_set">
             <hgroup class="centered">
-              <h2 class="blue">
+              <h2 class="blue_h">
                 Набор для оформления подарков
               </h2>
             </hgroup>
@@ -648,7 +652,7 @@
                 <li>2. Уточним адрес и подберем удобный вариант доставки.</li>
               </ul>
             </div>
-            <form method="post" action="#order_ready_sets">
+            <form method="post" action="#order_ready_sets" id="ready_sets_order_form">
               <div>
                 <label for="name">*Ваше Имя:</label>
                 <input class="required" name="name" type="text" placeholder="Маргарита"/>
@@ -663,7 +667,7 @@
               </div>
               <div>
                 <label for="phone_number">*Ваш телефон:</label>
-                <input class="required" name="phone_number" type="text" id="phone" placeholder="+ 7 (123) 456-78-90"/>
+                <input class="required" name="phone_number" type="text" id="phone_2" placeholder="+ 7 (123) 456-78-90"/>
               </div>
               <div>
                 <label for="message">Комментарий:</label>
@@ -739,7 +743,7 @@
             <br>
             <span class="regular">Просто закажите консультацию.</span>
           </div>
-          <form method="post" action="#order_call_back">
+          <form method="post" action="#order_call_back" id="consultation_order_form">
             <div>
               <label for="name">*Ваше Имя:</label>
               <input class="required" name="name" type="text" placeholder="Маргарита"/>
@@ -754,7 +758,7 @@
             </div>
             <div>
               <label for="phone_number">*Ваш телефон:</label>
-              <input class="required" name="phone_number" type="text" id="phone" placeholder="+ 7 (123) 456-78-90"/>
+              <input class="required" name="phone_number" type="text" id="phone_3" placeholder="+ 7 (123) 456-78-90"/>
             </div>
             <div>
               <label for="message">Комментарий:</label>

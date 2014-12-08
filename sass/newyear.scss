@@ -2,29 +2,30 @@ body{
   font-size: 156.25%;
   font-family: 'Conv_NeoSansPro-Light';
   color: #333333;
+  background: #DEDEDE;
 
   .clearfix {
     clear: both;
   }
 
   .size_1 {
-    font-size: 1.32em
+    font-size: 1.32em !important;
   }
 
   .size_2 {
-    font-size: 1.66em;
+    font-size: 1.66em !important;
   }
 
   .size_3 {
-    font-size: 2em;
+    font-size: 2em !important;
   }
 
   .size_4{
-    font-size: 4em;
+    font-size: 4em !important;
   }
 
   .size_small {
-    font-size: 0.66em;
+    font-size: 0.66em !important;
   }
 
   .light {
@@ -60,11 +61,11 @@ body{
     border-radius: 0.25em;
     margin-bottom: 0.5em;
 
-    &.green {
+    &.green_h {
       background-color: #66cc00;
     }
 
-    &.blue {
+    &.blue_h {
       background-color: #0099cc;
     }
   }
@@ -150,6 +151,7 @@ body{
     min-height: 100%;
     height: auto !important;
     height: 100%;
+    background: white;
 
     header {
       height: 778px;
@@ -167,10 +169,7 @@ body{
           vertical-align: bottom;
 
           a {
-            margin-left: 2em;
             color: #333333;
-            padding: 1.2em 1em 0;
-            background: url(../images/logo.png) no-repeat 50% 0%;
           }
         }
 
@@ -225,13 +224,8 @@ body{
         }
 
         .button_box {
-
-          .blue {
-            margin-left: 2em;
-          }
-
-          .green {
-            margin-right: 2em;
+          span {
+            padding: 0 1.5em;
           }
         }
       }
@@ -741,7 +735,7 @@ body{
           background: #cccccc;
 
           li {
-            display: inline-block;
+            display: inline-block !important;
             width: 14em;
 
             img {
@@ -781,7 +775,7 @@ body{
             padding: 1.5em 0;
 
             li {
-              display: inline-block;
+              display: inline-block !important;
               width: 15em;
             }
           }

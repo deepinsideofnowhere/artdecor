@@ -8,7 +8,55 @@
 }
 
 /* line 9, ../sass/buttons.scss */
-.button, input[type="submit"] {
+input[type="submit"] {
+  padding: 0.6em 0.5em 0.3em !important;
+  border-radius: 0.25em !important;
+  display: inline-block !important;
+  text-transform: uppercase !important;
+  top: -0.08em !important;
+  font-size: 1.32em !important;
+  text-decoration: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: top 50ms ease-out 0s, box-shadow 50ms ease-out 0s !important;
+}
+
+/* line 22, ../sass/buttons.scss */
+.yellow {
+  color: #333333 !important;
+  background-color: yellow !important;
+  box-shadow: 0 0.16em 0 #ffcc00;
+}
+/* line 27, ../sass/buttons.scss */
+.yellow:hover {
+  top: 0.04em !important;
+  box-shadow: 0 0.04em 0 #ffcc00;
+}
+
+/* line 33, ../sass/buttons.scss */
+.green {
+  background-color: #66cc00 !important;
+  box-shadow: 0 0.16em 0 #009900;
+}
+/* line 37, ../sass/buttons.scss */
+.green:hover {
+  top: 0.04em !important;
+  box-shadow: 0 0.04em 0 #009900;
+}
+
+/* line 43, ../sass/buttons.scss */
+.blue {
+  background-color: #0099cc !important;
+  box-shadow: 0 0.16em 0 #0066cc;
+}
+/* line 47, ../sass/buttons.scss */
+.blue:hover {
+  top: 0.04em !important;
+  box-shadow: 0 0.04em 0 #0066cc;
+}
+
+/* line 53, ../sass/buttons.scss */
+.button {
   padding: 0.6em 0.5em 0.3em;
   border-radius: 0.25em;
   display: inline-block;
@@ -18,9 +66,10 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
+  transition: top 50ms ease-out 0s, box-shadow 50ms ease-out 0s;
 }
-/* line 20, ../sass/buttons.scss */
-.button.vk, input[type="submit"].vk {
+/* line 67, ../sass/buttons.scss */
+.button.vk {
   background-color: #0066cc;
   text-decoration: none;
   font-size: 3em;
@@ -30,17 +79,13 @@
   top: -0.04em;
   box-shadow: 0 0.08em 0 #003399;
 }
-/* line 30, ../sass/buttons.scss */
-.button.vk:hover, input[type="submit"].vk:hover {
-  background-color: #0063c7;
-}
-/* line 34, ../sass/buttons.scss */
-.button.vk:active, input[type="submit"].vk:active {
+/* line 77, ../sass/buttons.scss */
+.button.vk:hover {
   top: 0.02em;
   box-shadow: 0 0.02em 0 #003399;
 }
-/* line 40, ../sass/buttons.scss */
-.button.inst, input[type="submit"].inst {
+/* line 83, ../sass/buttons.scss */
+.button.inst {
   background-color: #ff9900;
   text-decoration: none;
   font-size: 3em;
@@ -50,55 +95,8 @@
   top: -0.04em;
   box-shadow: 0 0.08em 0 #cc6600;
 }
-/* line 50, ../sass/buttons.scss */
-.button.inst:hover, input[type="submit"].inst:hover {
-  background-color: #fa9600;
-}
-/* line 54, ../sass/buttons.scss */
-.button.inst:active, input[type="submit"].inst:active {
+/* line 93, ../sass/buttons.scss */
+.button.inst:hover {
   top: 0.02em;
   box-shadow: 0 0.02em 0 #cc6600;
-}
-/* line 60, ../sass/buttons.scss */
-.button.yellow, input[type="submit"].yellow {
-  color: #333333;
-  background-color: yellow;
-  box-shadow: 0 0.16em 0 #ffcc00;
-}
-/* line 65, ../sass/buttons.scss */
-.button.yellow:hover, input[type="submit"].yellow:hover {
-  background-color: #fafa00;
-}
-/* line 69, ../sass/buttons.scss */
-.button.yellow:active, input[type="submit"].yellow:active {
-  top: 0.04em;
-  box-shadow: 0 0.04em 0 #ffcc00;
-}
-/* line 75, ../sass/buttons.scss */
-.button.green, input[type="submit"].green {
-  background-color: #66cc00;
-  box-shadow: 0 0.16em 0 #009900;
-}
-/* line 79, ../sass/buttons.scss */
-.button.green:hover, input[type="submit"].green:hover {
-  background-color: #63c700;
-}
-/* line 83, ../sass/buttons.scss */
-.button.green:active, input[type="submit"].green:active {
-  top: 0.04em;
-  box-shadow: 0 0.04em 0 #009900;
-}
-/* line 89, ../sass/buttons.scss */
-.button.blue, input[type="submit"].blue {
-  background-color: #0099cc;
-  box-shadow: 0 0.16em 0 #0066cc;
-}
-/* line 93, ../sass/buttons.scss */
-.button.blue:hover, input[type="submit"].blue:hover {
-  background-color: #0095c7;
-}
-/* line 97, ../sass/buttons.scss */
-.button.blue:active, input[type="submit"].blue:active {
-  top: 0.04em;
-  box-shadow: 0 0.04em 0 #0066cc;
 }
