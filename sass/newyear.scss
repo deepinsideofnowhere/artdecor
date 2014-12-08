@@ -1,0 +1,886 @@
+body{
+  font-size: 156.25%;
+  font-family: 'Conv_NeoSansPro-Light';
+  color: #333333;
+  background: #DEDEDE;
+
+  .clearfix {
+    clear: both;
+  }
+
+  .size_1 {
+    font-size: 1.32em !important;
+  }
+
+  .size_2 {
+    font-size: 1.66em !important;
+  }
+
+  .size_3 {
+    font-size: 2em !important;
+  }
+
+  .size_4{
+    font-size: 4em !important;
+  }
+
+  .size_small {
+    font-size: 0.66em !important;
+  }
+
+  .light {
+    font-family: 'Conv_NeoSansPro-Light';
+  }
+
+  .regular {
+    font-family: 'Conv_NeoSansPro-Regular';
+  }
+
+  .centered {
+    text-align: center;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      text-decoration: none; 
+    }
+  }
+
+  p, span {
+    line-height: 1.2em;
+  }
+
+  h2 {
+    font-size: 2.32em;
+    padding: 0.2em 0.5em 0.1em;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    border-radius: 0.25em;
+    margin-bottom: 0.5em;
+
+    &.green_h {
+      background-color: rgb(102, 204, 0);
+    }
+
+    &.blue_h {
+      background-color: rgb(0, 153, 204);
+    }
+  }
+
+  h3 {
+    color: white;
+    font-family: 'Conv_NeoSansPro-Regular';
+    font-size: 2em;
+    padding: 0.5em;
+    line-height: 1.2em;
+
+    &.white {
+      background: white;
+      color: #333333;
+    }
+  }
+
+  form {
+    padding: 0 4.8em;
+
+    label {
+      color: white;
+      width: 8em;
+      text-align: right;
+      display: inline-block;
+
+      &.error {
+        display: block;
+        width: auto;
+        text-align: left;
+        margin-left: 8.7em;
+        color: red;
+        margin-bottom: 0.85em;
+        margin-top: -0.5em;
+      }
+
+      &[for="message"] {
+        vertical-align: top;
+        top: 0.5em;
+      }
+    }
+
+    input[type="text"], input[type="email"], textarea {
+      padding: 0.4em 0.4em 0.3em;
+      border-radius: 0.25rem;
+      border: 1px solid #929292;
+      font-family: 'Conv_NeoSansPro-Light';
+      font-size: 1em;
+      color: #333333;
+      width: 595px;
+      margin-bottom: 0.85em;
+
+      &:-moz-placeholder {
+        color: #999999;
+      }
+
+      &::-webkit-input-placeholder {
+        color: #999999;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      color: white;
+      font-family: 'Conv_NeoSansPro-Medium';
+      position: relative;
+      margin-bottom: 0.85em;
+      width: 616px;
+      
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    background: white;
+
+    header {
+      height: 778px;
+
+      .top_line {
+        padding: 0.64em 0;
+
+        .logo, p, .order {
+          width: 33%;
+          display: inline-block;
+          vertical-align: top;
+        }
+
+        .logo {
+          vertical-align: bottom;
+
+          a {
+            color: #333333;
+          }
+        }
+
+        p {
+          text-align: center;
+        }
+
+        .order {
+          text-align: right;
+          top: 0.2em;
+
+          a {
+            margin-right: 2em;
+            font-size: 1em;
+          }
+        }
+      }
+
+      .top_offer {
+        height: 645px;
+        background: url(../images/bg_top_offer.jpg) no-repeat 50% 50%;
+        padding: 0 2em;
+        color: white;
+
+        .phone_number, .goods {
+          float: left;
+          width: 50%;
+          background: rgba(black, 0.3);
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+        }
+
+        .goods {
+          text-align: left;
+          margin-left: -2em;
+          padding-left: 2em;
+
+          a {
+            text-decoration: underline;
+            cursor: pointer;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+
+        .phone_number {
+          text-align: right;
+          margin-right: -2em;
+          padding-right: 2em;
+        }
+
+        .button_box {
+          span {
+            padding: 0 1.5em;
+          }
+        }
+      }
+
+      .menu {
+        background: rgba(black,0.5);
+        z-index: 100;
+        width: 1280px;
+
+        ul {
+          text-align: center;
+
+          li {
+            margin: 0.3em 0.4em;
+            display: inline-block;
+
+            a {
+              text-decoration: underline;
+              cursor: pointer;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    section {
+
+      .map {
+        background: url(../images/map.jpg) no-repeat 90% 0%;
+        height: 660px;
+
+        p, h4 {
+          background: rgba(white, 0.5);
+          text-align: center;
+        }
+
+        h4 {
+          font-size: 1.65em;
+          line-height: 1.2em;
+          margin: 0.6em 0;
+        }
+
+        p {
+          border-radius: 0.25em;
+          position: absolute;
+          padding: 0.3em 0.5em 0.3em;
+
+          &.city_1, &.city_2 {
+            display: inline-block;
+            padding: 0.3em 0.5em 0.3em;
+          }
+
+          &.city_1 {
+            top: 230px;
+            left: 70px;
+          }
+
+          &.city_2 {
+            top: 310px;
+            left: 40px;
+          }
+
+          &.city_list {
+            width: 100%;
+            bottom: 1em;
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+      }
+
+      .detales {
+        background: url(../images/tracery_l.png) no-repeat 5% 50%, url(../images/tracery_r.png) no-repeat 95% 50%;
+        padding: 1.35em 0;
+
+        span {
+          background-color: rgb(102, 204, 0);
+          padding: 0.05em;
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+
+      .price {
+        text-align: center;
+        display: inline-block;
+        margin: 5em 2em 0;
+        color: white;
+      }
+
+      #ny_bowl_order, #ready_sets_order, #consultation_order {
+        background: url(../images/arrows.png) no-repeat 50% 95% #cccccc;
+
+        a {
+          color: #0066ff;
+        }
+
+        .description {
+          padding-left: 13em;
+          margin: 1.2em 0;
+          line-height: 1.2em; 
+        }
+
+        p {
+          text-align: center;
+          padding-bottom: 1em;
+        }
+      }
+
+      #consultation_order {
+        .description {
+          padding-left: 11.5em;
+          padding-top: 1em;
+        }
+      }
+
+      #ny_bowl {
+        margin-bottom: 1.5em;
+
+        .ny_bowl_offer {
+          background: url(../images/bg_ny_bowl_offer.jpg) no-repeat 50% 50%;
+          height: 750px;
+
+          h3 {
+            background: rgba(black, 0.5);
+          }
+        }
+
+        .ny_bowl_color {
+          background: url(../images/bg_ny_bowl_color.jpg) no-repeat 50% 50%;
+          height: 862px;
+
+          p {
+            position: absolute;
+            display: inline-block;
+            background: rgba(black, 0.5);
+            padding: 0.1em 0.5em;
+            color: white;
+
+            &:first-child {
+              top: 182px;
+              left: 21px;
+            }
+
+            &:last-child {
+              top: 612px;
+              left: 600px;
+              text-align: right;
+            }
+          }
+        }
+
+        .ny_bowl_composition {
+          background: url(../images/bg_ny_bowl_composition.jpg) no-repeat 50% 50%;
+          height: 748px;
+        }
+
+        .ny_bowl_reasons {
+          background: url(../images/bg_ny_bowl_reasons.jpg) no-repeat 50% 50%;
+          height: 1090px;
+          padding: 1em 2em;
+
+          h3 {
+            padding: 0.5em 0em;
+            text-align: right;
+          }
+
+          p {
+            color: white;
+            text-align: right;
+          }
+        }
+
+        .ny_bowl_delivery {
+          background: url(../images/bg_ny_bowl_delivery.jpg) no-repeat 50% 50%;
+          height: 750px;
+
+          .shipping {
+            padding-left: 50%;
+            padding-top: 2em;
+            color: white;
+
+            a {
+              margin: 1.5em 0 1em;
+            }
+          }
+        }
+
+        .ny_bowl_milestones {
+          h3 {
+            color: rgb(102, 204, 0);
+          }
+
+          ul {
+            padding: 0 2em;
+            line-height: 1.2em;
+
+            &.icons {
+              li {
+                color: rgb(102, 204, 0);
+
+                img {
+                  vertical-align: middle;
+                }
+              }
+            }
+
+            li {
+              width: 32.5%;
+              text-align: center;
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+
+          p {
+            span:first-child {
+              color: rgb(102, 204, 0);
+            }
+          }
+        }
+
+        .ny_bowl_video {
+          text-align: center;
+
+          h3 {
+            color: #333333;
+          }
+
+          iframe {
+            box-shadow: 0 10px 10px rgba(black, 0.5);
+          }
+        }
+      }
+
+      #ready_sets {
+        margin-bottom: 1.5em;
+
+        .chocolate_1, .chocolate_2, .chocolate_3, .chocolate_4, .new_year_cards_1, .new_year_cards_review_1, .new_year_cards_2, .new_year_cards_review_2, .new_year_cards_3, .decor_set_1, .decor_set_2 {
+          height: 853px;
+        }
+
+        .chocolate_1, .chocolate_3, .decor_set_1 {
+
+          p {
+            position: absolute;
+            bottom: 1em;
+            text-align: right;
+            color: white;
+            right: 50px;
+          }
+        }
+
+        .chocolate_2, .chocolate_4, .decor_set_2 {
+
+          .description {
+            position: absolute;
+            top: 1em;
+            right: 50px;
+            color: white;
+            text-align: right;
+          }
+
+          .price {
+            position: absolute;
+            bottom: 3em;
+          }
+
+          .button_box {
+            bottom: 2.5em;
+          }
+        }
+
+        .chocolate_1 {
+          background: url(../images/bg_chocolate_1.jpg) no-repeat 50% 50%;
+        }
+
+        .chocolate_2 {
+          background: url(../images/bg_chocolate_2.jpg) no-repeat 50% 50%;
+        }
+
+        .chocolate_3 {
+          background: url(../images/bg_chocolate_3.jpg) no-repeat 50% 50%;
+        }
+
+        .chocolate_4 {
+          background: url(../images/bg_chocolate_4.jpg) no-repeat 50% 50%;
+          margin-bottom: 1.5em;
+        }
+
+        .new_year_cards_1 {
+          background:  url(../images/new.png) no-repeat 0 0, url(../images/bg_new_year_cards_1.jpg) no-repeat 50% 50%;
+
+          .description {
+            position: absolute;
+            top: 6em;
+            right: 50px;
+            color: white;
+            text-align: right;
+          }
+
+          .price {
+            position: absolute;
+            bottom: 3em;
+          }
+
+          .button_box {
+            bottom: 2em;
+          }
+        }
+
+        .new_year_cards_2 {
+          background: url(../images/bg_new_year_cards_2.jpg) no-repeat 50% 50%;
+
+          .description_1, .description_2, .description_3 {
+            position: absolute;
+            color: white;
+            text-align: right;
+          }
+
+          .description_1 {
+            top: 5.5em;
+            right: 50px;
+          }
+
+          .description_2 {
+            top: 7em;
+            left: 50px;
+            text-align: left;
+          }
+
+          .description_3 {
+            top: 19em;
+            right: 50px;
+          }
+
+          .price {
+            position: absolute;
+            bottom: 3em;
+          }
+
+          .button_box {
+            bottom: 2em;
+          }
+        }
+
+        .new_year_cards_3 {
+          background: url(../images/bg_new_year_cards_3.jpg) no-repeat 50% 50%;
+          margin-bottom: 1.5em;
+
+          .description {
+            position: absolute;
+            color: white;
+            text-align: right;
+            bottom: 2.5em;
+            right: 2em;
+          }
+
+          .price {
+            position: absolute;
+            bottom: 4.5em;
+            text-align: right;
+
+            p:last-child {
+              font-size: 3em;
+
+              span {
+                text-decoration: line-through;
+              }
+            }
+          }
+
+          .button_box {
+            bottom: 2em;
+          }
+        }
+
+        .new_year_cards_review_1, .new_year_cards_review_2 {
+          img {
+            float: left;
+          }
+        }
+
+        .decor_set_1 {
+          background: url(../images/bg_decor_set_1.jpg) no-repeat 50% 50%;
+        }
+
+        .decor_set_2 {
+          background:  url(../images/bestseller.png) no-repeat 0 0, url(../images/bg_decor_set_2.jpg) no-repeat 50% 50%;
+        }
+
+        .ready_sets_milestones {
+          h3 {
+            color: rgb(0, 153, 204);
+          }
+
+          ul {
+            padding: 0 2em;
+            line-height: 1.2em;
+
+            &.icons {
+              li {
+                color: rgb(0, 153, 204);
+
+                img {
+                  vertical-align: middle;
+                }
+              }
+            }
+
+            li {
+              width: 32.5%;
+              text-align: center;
+              display: inline-block;
+              vertical-align: middle;
+            }
+          }
+
+          p {
+            span:first-child {
+              color: rgb(0, 153, 204);
+            }
+          }
+        }
+      }
+
+      #feedbacks {
+        a {
+          color: #0066ff;
+        }
+
+        hgroup {
+          h3 {
+            color: #333333;
+            padding-bottom: 0;
+          }
+
+          p {
+            margin-bottom: 1em;
+          }
+        }
+
+        .slidesjs-previous, .slidesjs-next {
+          display: block;
+          width: 4em;
+          height: 4em;
+          position: absolute;
+          top: 50%;
+          margin-top: -2em;
+          color: transparent;
+          z-index: 100;
+        }
+
+        .slidesjs-previous {
+          background:  url(../images/slide_arrow_l.png) no-repeat 50% 50%;
+          left: 1.5em;
+        }
+
+        .slidesjs-next {
+          background:  url(../images/slide_arrow_r.png) no-repeat 50% 50%;
+          right: 1.5em;
+        }
+
+        .feedback {
+          padding: 2em 6.5em;
+          background: #cccccc;
+
+          .person, .feedback_text {
+            display: inline-block;
+            vertical-align: top;
+          }
+
+          .person {
+            width: 10em;
+
+            img {
+              border-radius: 5em;
+              margin-bottom: 0.5em;
+            }
+          }
+
+          .feedback_text {
+            width: 24em;
+            background:  url(../images/tail.png) no-repeat 0 4em;
+            padding-left: 3.76em;
+
+            p {
+              padding: 1.5em 1em;
+              background-color: white;
+              border-radius: 1.5em;
+            }
+          }
+        }
+      }
+
+      #team {
+        h3 {
+          color: #333333;
+        }
+
+        ul {
+          padding: 2em 4em;
+          background: #cccccc;
+
+          li {
+            display: inline-block !important;
+            width: 14em;
+
+            img {
+              border-radius: 5em;
+            }
+          }
+        }
+      }
+
+      #contacts {
+        a {
+          color: #0066ff;
+        }
+
+        .address {
+          background: url(../images/g_map.jpg) no-repeat 50% 50%;
+          height: 315px;
+          padding-top: 1em;
+
+          .address_box {
+            border-radius: 1.5em;
+            background: rgba(white,0.8);
+            display: inline-block;
+            padding: 0 1em 1em;
+
+            h3 {
+              color: #333333;
+            }
+          }
+        }
+
+        .personal_contacts {
+          ul {
+            display: inline-block;
+            border-top: 2px solid #333333;
+            border-bottom: 2px solid #333333;
+            padding: 1.5em 0;
+
+            li {
+              display: inline-block !important;
+              width: 15em;
+            }
+          }
+        }
+
+        .socials {
+          padding: 1em 0;
+
+          a, p {
+            display: inline-block;
+          }
+
+          p {
+            padding: 0 2em;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background: #666666;
+    position: relative;
+    padding-top: 1em;
+    width: 100%;
+    min-width: 1280px;
+
+    .border {
+      border-top: 2px solid white;
+      height: 2px;
+      border-bottom: 1px solid white;
+    }
+
+    .inner {
+      padding: 1em 0;
+      margin: 0 auto;
+      color: white;
+      width: 1280px;
+
+      div {
+        padding: 0 4%;
+        margin-bottom: 1em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        ul, p {
+          display: inline-block;
+          text-align: center;
+        }
+
+        ul {
+          text-align: left;
+        }
+
+        p.company {
+          width: 755px;
+        }
+
+        p:last-child {
+          text-align: right;
+        }
+
+        &.copyright {
+          p:first-child {
+            text-align: left;
+            width: 1040px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.response {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(black,0.7);
+  z-index: 2000;
+  text-align: center;
+
+  .popup {
+    border-radius: 0.5em;
+    padding: 2em;
+    background: white;
+    margin: -80px auto 0;
+    top: 50%;
+    display: inline-block;
+  }
+
+  .close {
+    display: block;
+    width: 81px;
+    height: 86px;
+    background: url(../images/close.png) no-repeat 50% 50%;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    cursor: pointer;
+  }
+}

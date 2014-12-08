@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title></title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="stylesheets/screen.css" rel="stylesheet">
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.54140.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slides.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+
+        $("#phone_1, #phone_2, #phone_3").mask("+9 (999) 999-99-99");
+
+        $("input[name=email_confirmation], label[for=email_confirmation]").hide();
+
+        $("#ny_bowl_order_form").validate();
+        $("#ready_sets_order_form").validate();
+        $("#consultation_order_form").validate();
+
+        $('.close').click(function() {
+          $('.response').addClass('hidden');
+        });
+
+        $('#ny_bowl_order_form').submit(function (event) {
+          event.preventDefault();
+
+          if ($(this).valid()) {
+            $.ajax('', { data: $(this).serialize() }, {
+              dataType: 'jsonp'
+            });
+            $(this)[0].reset();
+            $('.response').removeClass('hidden');
+          }
+        });
+
+        $('#ready_sets_order_form').submit(function (event) {
+          event.preventDefault();
+
+          if ($(this).valid()) {
+            $.ajax('', { data: $(this).serialize() }, {
+              dataType: 'jsonp'
+            });
+            $(this)[0].reset();
+            $('.response').removeClass('hidden');
+          }
+        });
+
+        $('#consultation_order_form').submit(function (event) {
+          event.preventDefault();
+
+          if ($(this).valid()) {
+            $.ajax('', { data: $(this).serialize() }, {
+              dataType: 'jsonp'
+            });
+            $(this)[0].reset();
+            $('.response').removeClass('hidden');
+          }
+        });
+
+        $('#slides').slidesjs({
+          height: 360,
+          pagination: false
+        })
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(window).load(function(){
+      $(".menu").sticky({ topSpacing: 0 });
+      });
+    </script>
+
+    <script type="text/javascript">
+      function addBookmark() {
+        if (document.all) window.external.addFavorite('http://htmlbook.ru', 'Сайт htmlbook.ru');
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <header>
+        <a id="top"></a>
+        <div class="top_line">
+          <div class="logo centered">
+            <a href="http://artdecor.pro/newyear"><img src="images/logo.png"></a>
+            <br>
+            <a href="http://artdecor.pro">artdecor.pro</a> / <a href="http://artdecor.pro/newyear">newyear</a>
+          </div>
+          <p>мастерская новогодних подарков дизайнера Анохиной Маргариты</p>
+          <div class="order">
+            <a class="button yellow to_consultation_order">Заказать консультацию</a>
+          </div>
+        </div>
+        <div class="top_offer">
+          <div class="goods">
+            <a class="to_ny_bowl">ёлочные шары</a>, <a class="to_ready_sets">шоколадки с пожеланиями</a>,
+            <br>
+            <a class="to_new_year_cards">новогодние окрытки</a>, <a class="to_decor_set">оформление подарков</a>
+          </div>
+          <div class="phone_number">
+            +7 (937) 897-85-75 г. Ульяновск
+            <br>
+            у нас заказывают со всей России
+          </div>
+          <div class="clearfix"></div>
+          <h3>
+            83% людей затягивают с покупкой
+            <br>
+            новогодних подарков и лишь
+            <br>
+            17% дарят удивительные и
+            <br>
+            оригинальные подарки
+          </h3>
+          <div class="button_box">
+            <a class="button green to_ny_bowl_order">Заказать именной подарок</a>
+            <span class="size_1">или</span>
+            <a class="button blue to_ready_sets_order">Заказать готовый подарок</a>
+          </div>
+        </div>
+        <nav class="menu">
+          <ul class="size_1">
+            <li><a class="to_top">Наверх</a></li>
+            <li><a class="to_ny_bowl">Именные подарки</a></li>
+            <li><a class="to_ready_sets">Готовые подарки</a></li>
+            <li><a class="to_feedbacks">Отзывы</a></li>
+            <li><a class="to_team">О нас</a></li>
+            <li><a class="to_contacts">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+        <div class="map">
+          <h4>
+            Вы можете сделать заказ из любого города России
+            <br>
+            и выбрать удобный для вас вариант доставки.
+          </h4>
+          <p class="city_1 size_1">Москва</p>
+          <p class="city_2 size_1">Ульяновск</p>
+          <p class="city_list size_1">
+            У нас уже заказывали из городов:
+            <br>
+            Москва, Казань, Нижний Новгород, Уфа, Самара, Мурманск,
+            <br>
+            Ульяновск, Саратов, Саранск, Пенза, Астрахань, Ростов-на-Дону,
+            <br>
+            Пермь, Пятигорск, Чебоксары, Альметьевск, Стрерлитамак. 
+          </p>
+        </div>
+
+        <div id="ny_bowl">
+          <hgroup class="centered">
+            <h2 class="green_h">
+              Именной ёлочный шар
+            </h2>
+          </hgroup>
+
+          <div class="ny_bowl_offer">
+            <h3 class="centered">
+              Подарите стеклянный ёлочный шар и он
+              <br>
+              будет радовать ваших близких долгие годы.
+            </h3>
+            <div class="price">
+              <p class="size_4 regular">Цена<br>750р.</p>
+              <span>
+                * Шары могур закончится в любой
+                <br>
+                момент, тк мы принимаем
+                <br>
+                корпоративные заказы.
+              </span>
+            </div>
+            <div class="button_box">
+              <a class="button green to_ny_bowl_order">Заказать именной ёлочный шар</a>
+            </div>
+          </div>
+
+          <div class="detales">
+            <p class="size_1 centered">
+              С одной стороны шара будет написано:
+              <br>
+              <span>Имя, с новым годом!</span>
+              <br>
+              С другой стороны: <span>2015</span>
+            </p>   
+          </div>
+          
+          <div class="ny_bowl_color">
+            <p class="size_3">
+              Выберете цвет:
+              <br>
+              красный или синий.
+            </p>
+            <p class="size_3">
+              Укажите имя,
+              <br>
+              кому адресован шар.
+            </p>
+          </div>
+          
+          <div class="detales">
+            <p class="size_1 centered">
+              Легкий стеклянный ёлочный шар.
+              <br>
+              Диаметр 10 сантиматров.
+              <br>
+              Вес всего 20 грамм.
+            </p>
+          </div>
+          
+          <div class="ny_bowl_composition"></div>
+          
+          <div class="ny_bowl_reasons">
+            <h3>
+              5 причин, почему стоит
+              <br>
+              подарить на новый год
+              <br>
+              именной ёлочный шар?
+            </h3>
+            <p class="size_1">
+              Вас будут вспоминать
+              <br>
+              каждый новый год,
+              <br>
+              когда  будут наряжать ёлку.
+              <br><br>
+              Иднивидуальный подарок,
+              <br>
+              значит вы купили подарок не за
+              <br>
+              5 мин, а подготовились за раннее,
+              <br>
+              что само по себе уже приятно.
+              <br><br>
+              Хороший выбор для тех,
+              <br>
+              кто не знает что подарить или
+              <br>
+              не хочет подарить очередную
+              <br>
+              ненужную безделушку.
+              <br><br>
+              Приятный сюрприз, который
+              <br>
+              больше всего оценят
+              <br>
+              женщины и дети.
+              <br><br>
+              Это самый новогодний
+              <br>
+              из всех новогодних подарков.
+            </p>
+          </div>
+          
+          <div class="ny_bowl_delivery">
+            <h3 class="centered">
+              Доставка ёлочного шара
+              <br>
+              курьером из рук в руки. <span class="light">(стекло)</span>
+            </h3>
+            <div class="shipping">
+              <p class="size_2">
+                Стоимость доставки курьером:
+              </p>
+                *вне зависимости от количества шаров.
+              <p class="size_2">
+                Ульяновск - самовывоз.
+                <br>
+                Москва и СПБ - 420р.
+                <br>
+                Казань и Самара - 470р.
+                <br>
+                Центральный регион - 560р.
+                <br>
+              </p>
+              <a class="button green to_ny_bowl_order">Заказать именной ёлочный шар</a>
+              <p>
+                Оставьте заявку и мы более точно расчитаем
+                <br>
+                доставку до вашего города. Обсудим с вами
+                <br>
+                все возможные варианты доставки.
+              </p>
+            </div>
+          </div>
+          
+          <div id="ny_bowl_order">
+            <h3 class="centered white">Заявка для именных ёлочных шаров.</h3>
+            <div class="description">
+              <label class="size_1 regular">Оставьте заявку и мы свяжемся с вами:</label>
+              <ul>
+                <li>1. Узнаем каких вы выбрали цвета и какие написать имена.</li>
+                <li>2. Уточним адрес и подберем оптимальный вариант доставки.</li>
+                <li>3. Расчитаем общую сумму вашего заказа.</li>
+              </ul>
+            </div>
+            <form method="post" action="#order_ny_bowl" id="ny_bowl_order_form">
+              <div>
+                <label for="name">*Ваше Имя:</label>
+                <input class="required" name="name" type="text" placeholder="Маргарита"/>
+              </div>
+              <div>
+                <label for="email">*Ваш e-mail:</label>
+                <input class="required" name="email" type="email" placeholder="Мы отправим идентификатор вашей посылки."/>
+              </div>
+              <div>
+                <label for="email_confirmation"></label>
+                <input name="email_confirmation" type="email" placeholder="Мы отправим идентификатор вашей посылки."/>
+              </div>
+              <div>
+                <label for="phone_number">*Ваш телефон:</label>
+                <input class="required" name="phone_number" type="text" id="phone_1" placeholder="+ 7 (123) 456-78-90"/>
+              </div>
+              <div>
+                <label for="message">Комментарий:</label>
+                <textarea name="message" placeholder="Укажите дату и удобное время, когда вам перезвонить. Напишите воросы к заказу."></textarea>
+              </div>
+              <div>
+                <label></label>
+                <button class="green" type="submit" href="#1">Отправить заявку</button>
+              </div>
+            </form>
+            <p class="size_small">
+              Ваши персональные данные в безопасности и
+              <br>
+              защищены <a href="http://www.consultant.ru/document/cons_doc_LAW_163964/" target="_blank">федеральным законом РФ № 152</a>.
+            </p>
+          </div>
+          
+          <div class="ny_bowl_milestones centered">
+            <h3>Этапы работы</h3>
+            <div>
+              <ul class="icons size_1">
+                <li>
+                  <img src="images/icon_g_order.jpg">
+                  Заявка
+                </li>
+                <li>
+                  <img src="images/icon_g_discussion.jpg">
+                  Обсуждение
+                </li>
+                <li>
+                  <img src="images/icon_g_payment.jpg">
+                  Оплата 100%
+                </li>
+              </ul>
+              <img class="line" src="images/phase_line_g_1.jpg">
+              <ul>
+                <li>Вы оставляете заявку<br>на сайте или Вконтакте.</li>
+                <li>Мы связываемся с Вами,<br>уточняем ФИО, адрес и пожелание,<br>подбираем вариант доставки.</li>
+                <li>Вы оплачиваете заказа и<br>мы записываем Вас в очередь.</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="icons size_1">
+                <li>
+                  <img src="images/icon_g_manufacture.jpg">
+                  Изготовление
+                </li>
+                <li>
+                  <img src="images/icon_g_delivery.jpg">
+                  Отправка
+                </li>
+                <li>
+                  <img src="images/icon_g_receiving.jpg">
+                  Получение
+                </li>
+              </ul>
+              <img class="line" src="images/phase_line_g_2.jpg">
+              <ul>
+                <li>Мы изготавливаем ваш заказ<br>и отправляем фотоотчет.</li>
+                <li>Мы отправляем посылку<br>и её идентификатор.</li>
+                <li>Вы получаете посылкуи радуете<br>ваших близких на новый год.</li>
+              </ul>
+            </div>
+            <img src="images/curve.jpg">
+            <p class="size_1">
+              Изготовление заказа занимает <span>от 3 до 5 дней</span>.
+              <br>
+              <span class="regular">Заказы принимаются до 20 декабря 2014г.</span>
+              <br>
+              *Количество шаров ограничено, тк мы
+              <br>
+              принимаем корпоративные заказы.
+            </p>
+          </div>
+          
+          <div class="ny_bowl_video">
+            <h3 class="centered">Видео про ёлочный шар</h3>
+            <iframe width="1024" height="576" src="http://www.youtube.com/embed/bF41QkH82tI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <h3 class="centered">Видео про упаковку ёлочного шара</h3>
+            <iframe width="1024" height="576" src="http://www.youtube.com/embed/QZhDMr03J7s?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div id="ready_sets">
+
+          <div id="chocolate">
+            <hgroup class="centered">
+              <h2 class="blue_h">
+                Шоколадки с пожеланиями
+              </h2>
+            </hgroup>
+            
+            <div class="chocolate_1">
+              <h3 class="centered">
+                Ищите необычный подарок на новый год?
+                <br>
+                Подарите новогодние шоколадки с пожеланиями.
+                <br>
+                Набор №1.
+              </h3>
+              <p class="size_2">
+                В наборе №1
+                <br>
+                20 шоколодок с разными
+                <br>
+                новогодними пожеланиями.
+              </p>
+            </div>
+            
+            <div class="chocolate_2">
+              <p class="size_1 description">
+                *Шоколадки упакованы
+                <br>
+                в коробочку ручной работы
+                <br>
+                + ленточка + новогодняя бирочка.
+              </p>
+              <div class="price">
+                <p class="size_4 regular">Цена<br>450р.</p>
+                <span class="size_3">
+                  Набор №1
+                  <br>
+                  20 штук
+                </span>
+              </div>
+              <div class="button_box">
+                <a class="button blue to_ready_sets_order">Заказать набор шоколадок №1</a>
+              </div>
+            </div>
+            
+            <div class="detales">
+              <p class="size_1 centered">
+                На шоколадках все пожелания разные
+                <br>
+                и подойдут по смыслу как любимым,
+                <br>
+                так родителям и друзьям.
+              </p>
+            </div>
+            
+            <div class="chocolate_3">
+              <h3 class="centered">
+                Подарите новогодние шоколадки
+                <br>
+                с пожеланиями. Набор №2.
+              </h3>
+              <p class="size_2">
+                В наборе №2
+                <br>
+                19 шоколодок “Птичье Молоко”
+                <br>
+                с новогодними пожеланиями
+                <br>
+                +11 с объемными буквами.
+                <br>
+                Всего 30 штук.
+              </p>
+            </div>
+            
+            <div class="chocolate_4">
+              <p class="size_1 description">
+                *Шоколадки упакованы
+                <br>
+                в коробочку ручной работы
+                <br>
+                + ленточка + новогодняя бирочка.
+              </p>
+              <div class="price">
+                <p class="size_4 regular">Цена<br>750р.</p>
+                <span class="size_3">
+                  Набор №2
+                  <br>
+                  30 штук
+                </span>
+              </div>
+              <div class="button_box">
+                <a class="button blue to_ready_sets_order">Заказать набор шоколадок №2</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="new_year_cards">
+            <hgroup class="centered">
+              <h2 class="blue_h">
+                Набор новогодних открыток
+              </h2>
+            </hgroup>
+            
+            <div class="new_year_cards_1">
+              <h3 class="centered">
+                Якрие новогодние окрытки
+              </h3>
+              <p class="size_1 description">
+                Одну отрытку можно
+                <br>
+                подписать от руки.
+              </p>
+              <div class="price">
+                <p class="size_4 regular">Цена<br>250р.</p>
+                <span class="size_3">
+                  3 открытки
+                </span>
+              </div>
+              <div class="button_box">
+                <a class="button blue to_ready_sets_order">Заказать яркие открытки</a>
+              </div>
+            </div>
+            
+            <div class="new_year_cards_review_1">
+              <img src="images/bg_new_year_cards_review_1-1.jpg">
+              <img src="images/bg_new_year_cards_review_1-2.jpg">
+              <img src="images/bg_new_year_cards_review_1-3.jpg">
+              <img src="images/bg_new_year_cards_review_1-4.jpg">
+            </div>
+            
+            <div class="detales">
+              <p class="size_1 centered">
+                Маленький знак внимания,
+                <br>
+                который запомнится на долго.
+              </p>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <div class="new_year_cards_2">
+              <h3 class="centered">Винтажные новогодние открытки</h3>
+              <p class="size_1 description_1">
+                Одну отрытку можно
+                <br>
+                подписать от руки.
+              </p>
+              <p class="size_1 description_2">
+                Дизайнерский картон
+                <br>
+                конверты ручной работы
+                <br>
+                + новогодние марочки.
+              </p>
+              <p class="size_1 description_3">
+                Две открытки
+                <br>
+                с готовым текстом.
+              </p>
+              <div class="price">
+                <p class="size_4 regular">Цена<br>250р.</p>
+                <span class="size_3">
+                  3 открытки
+                </span>
+              </div>
+              <div class="button_box">
+                <a class="button blue to_ready_sets_order">Заказать винтажные открытки</a>
+              </div>
+            </div>
+
+            <div class="new_year_cards_review_2">
+              <img src="images/bg_new_year_cards_review_2-1.jpg">
+              <img src="images/bg_new_year_cards_review_2-2.jpg">
+              <img src="images/bg_new_year_cards_review_2-3.jpg">
+              <img src="images/bg_new_year_cards_review_2-4.jpg">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="detales">
+              <p class="size_1 centered">
+                Новогодние открытки послужат
+                <br>
+                отличным дополнением к любому подарку.
+              </p>
+            </div>
+            
+            <div class="new_year_cards_3">
+              <h3 class="centered">
+                Закажите 2 набора одновременно
+                <br>
+                и сэкономьте 150 рублей.
+              </h3>
+              <p class="description">
+                *Скидка действует при
+                <br>
+                заказе двух и более
+                <br>
+                парных наборов открыток.
+              </p>
+              <div class="price">
+                <p class="size_4 regular">350р.</p>
+                <p>Цена <span>500р.</span></p>
+              </div>
+              <div class="button_box">
+                <a class="button blue to_ready_sets_order">Заказать набор открыток</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="decor_set">
+            <hgroup class="centered">
+              <h2 class="blue_h">
+                Набор для оформления подарков
+              </h2>
+            </hgroup>
+
+            <div class="decor_set_1">
+              <h3 class="centered">
+                Оригинальное оформление подарков
+                <br>
+                удивит ваших близких. Используйте
+                <br>
+                готовый набор для оформления подарков.
+              </h3>
+              <p class="size_2">
+                Всего 34 элемента:
+                <br>
+                18 новогодних бирочек,
+                <br>
+                16 объемных снежинок и фигур,
+                <br>
+                хватит для оформления
+                <br>
+                15 подарков и более.
+              </p>
+            </div>
+
+            <div class="detales">
+              <p class="size_1 centered">
+                Обьемный двухсторонний скотч
+                <br>
+                уже будет наклеен изнутри.
+              </p>
+            </div>
+            
+            <div class="decor_set_2">
+              <div class="price">
+                <p class="size_4 regular">Цена<br>350р.</p>
+              </div>
+              <div class="button_box">
+                <a class="button blue to_ready_sets_order">заказать набор для подарков</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="ready_sets_order">
+            <h3 class="centered white">Общая заявка для готовых новогодних наборов.</h3>
+            <div class="description">
+              <label class="size_1 regular">Оставьте заявку и мы свяжемся с вами:</label>
+              <ul>
+                <li>1. Расчитаем общую сумму вашего заказа.</li>
+                <li>2. Уточним адрес и подберем удобный вариант доставки.</li>
+              </ul>
+            </div>
+            <form method="post" action="#order_ready_sets" id="ready_sets_order_form">
+              <div>
+                <label for="name">*Ваше Имя:</label>
+                <input class="required" name="name" type="text" placeholder="Маргарита"/>
+              </div>
+              <div>
+                <label for="email">*Ваш e-mail:</label>
+                <input class="required" name="email" type="email" placeholder="Мы отправим идентификатор вашей посылки."/>
+              </div>
+              <div>
+                <label for="email_confirmation"></label>
+                <input name="email_confirmation" type="email" placeholder="Мы отправим идентификатор вашей посылки."/>
+              </div>
+              <div>
+                <label for="phone_number">*Ваш телефон:</label>
+                <input class="required" name="phone_number" type="text" id="phone_2" placeholder="+ 7 (123) 456-78-90"/>
+              </div>
+              <div>
+                <label for="message">Комментарий:</label>
+                <textarea name="message" placeholder="Укажите дату и удобное время, когда вам перезвонить. Напишите воросы к заказу."></textarea>
+              </div>
+              <div>
+                <label></label>
+                <button class="blue" type="submit" href="#2">Отправить заявку</button>
+              </div>
+            </form>
+            <p class="size_small">
+              Ваши персональные данные в безопасности и
+              <br>
+              защищены <a href="http://www.consultant.ru/document/cons_doc_LAW_163964/" target="_blank">федеральным законом РФ № 152</a>.
+            </p>
+          </div>
+
+          <div class="ready_sets_milestones centered">
+            <h3>Этапы работы</h3>
+            <div>
+              <ul class="icons size_1">
+                <li>
+                  <img src="images/icon_b_order.jpg">
+                  Заявка
+                </li>
+                <li>
+                  <img src="images/icon_b_discussion.jpg">
+                  Обсуждение
+                </li>
+                <li>
+                  <img src="images/icon_b_payment.jpg">
+                  Оплата 100%
+                </li>
+              </ul>
+              <img class="line" src="images/phase_line_b_1.jpg">
+              <ul>
+                <li>Вы оставляете заявку<br>на сайте или Вконтакте.</li>
+                <li>Мы связываемся с Вами,<br>уточняем ФИО, адрес и пожелание,<br>подбираем вариант доставки.</li>
+                <li>Вы оплачиваете заказа и<br>мы записываем Вас в очередь.</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="icons size_1">
+                <li>
+                  <img src="images/icon_b_delivery.jpg">
+                  Отправка
+                </li>
+                <li>
+                  <img src="images/icon_b_receiving.jpg">
+                  Получение
+                </li>
+              </ul>
+              <img class="line" src="images/phase_line_b_2.jpg">
+              <ul>
+                <li>Мы отправляем посылку<br>и её идентификатор.</li>
+                <li>Вы получаете посылкуи радуете<br>ваших близких на новый год.</li>
+              </ul>
+            </div>
+            <img src="images/curve.jpg">
+            <p class="size_1">
+              Изготовление заказа занимает <span>от 2 до 3 дней</span>.
+              <br>
+              <span class="regular">Заказы принимаются до 25 декабря 2014г.</span>
+            </p>
+          </div>
+        </div>
+
+        <div id="consultation_order">
+          <div class="description size_1">
+            Если у вас крупный заказ, особые
+            <br>
+            пожелания или остались вопросы?
+            <br>
+            <span class="regular">Просто закажите консультацию.</span>
+          </div>
+          <form method="post" action="#order_call_back" id="consultation_order_form">
+            <div>
+              <label for="name">*Ваше Имя:</label>
+              <input class="required" name="name" type="text" placeholder="Маргарита"/>
+            </div>
+            <div>
+              <label for="email">Ваш e-mail:</label>
+              <input name="email" type="email" placeholder="Мы отправим идентификатор вашей посылки."/>
+            </div>
+            <div>
+              <label for="email_confirmation"></label>
+              <input name="email_confirmation" type="email" placeholder="Мы отправим идентификатор вашей посылки."/>
+            </div>
+            <div>
+              <label for="phone_number">*Ваш телефон:</label>
+              <input class="required" name="phone_number" type="text" id="phone_3" placeholder="+ 7 (123) 456-78-90"/>
+            </div>
+            <div>
+              <label for="message">Комментарий:</label>
+              <textarea name="message" placeholder="Укажите дату и удобное время, когда вам перезвонить. Напишите воросы к заказу."></textarea>
+            </div>
+            <div>
+              <label></label>
+              <button class="yellow" type="submit" href="#3">Заказать консультацию</button>
+            </div>
+          </form>
+          <p class="size_small">
+            Ваши персональные данные в безопасности и
+            <br>
+            защищены <a href="http://www.consultant.ru/document/cons_doc_LAW_163964/" target="_blank">федеральным законом РФ № 152</a>.
+          </p>
+        </div>
+
+        <div id="feedbacks">
+          <hgroup>
+            <h3 class="centered">Отзывы клиентов</h3>
+            <p class="centered">Все отзывы читайте в нашей группе <a href="http://vk.com/artdecor_pro" target="_blank">Вконтакте</a></p>
+          </hgroup>
+          <div id="slides">
+
+            <div class="feedback">
+              <div class="person centered">
+                <img src="images/feedback_photo_1.jpg">
+                <p class="size_1">
+                  Елена Баженова
+                  <br>
+                  г. Москва
+                  <br>
+                  <a href="http://vk.com/ebashz" target="_blank">vk.com / ebashz</a>
+                </p>
+              </div>
+              <div class="feedback_text">
+                <p>Рита, спасибо большое за оперативную и очень качественную работу :))) Я очень довольна своими чудесными приглашениями и шоколадками :))) Гости были очень рады получить наши приглашения, сделанные твоими руками с любовью к делу и хорошим дизайнерским вкусом! А я рада, что обратилась к тебе!!! Кстати, на заметку твоим будущим заказчикам, доставка была организована СУПЕР быстро! (что для меня было крайне важно, так как сама я все делала в последний момент)!</p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <div class="person centered">
+                <img src="images/feedback_photo_1.jpg">
+                <p class="size_1">
+                  Елена Баженова
+                  <br>
+                  г. Москва
+                  <br>
+                  <a href="http://vk.com/ebashz" target="_blank">vk.com / ebashz</a>
+                </p>
+              </div>
+              <div class="feedback_text">
+                <p>Рита, спасибо большое за оперативную и очень качественную работу :))) Я очень довольна своими чудесными приглашениями и шоколадками :))) Гости были очень рады получить наши приглашения, сделанные твоими руками с любовью к делу и хорошим дизайнерским вкусом! А я рада, что обратилась к тебе!!! Кстати, на заметку твоим будущим заказчикам, доставка была организована СУПЕР быстро! (что для меня было крайне важно, так как сама я все делала в последний момент)!</p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <div class="person centered">
+                <img src="images/feedback_photo_1.jpg">
+                <p class="size_1">
+                  Елена Баженова
+                  <br>
+                  г. Москва
+                  <br>
+                  <a href="http://vk.com/ebashz" target="_blank">vk.com / ebashz</a>
+                </p>
+              </div>
+              <div class="feedback_text">
+                <p>Рита, спасибо большое за оперативную и очень качественную работу :))) Я очень довольна своими чудесными приглашениями и шоколадками :))) Гости были очень рады получить наши приглашения, сделанные твоими руками с любовью к делу и хорошим дизайнерским вкусом! А я рада, что обратилась к тебе!!! Кстати, на заметку твоим будущим заказчикам, доставка была организована СУПЕР быстро! (что для меня было крайне важно, так как сама я все делала в последний момент)!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="team" class="centered">
+          <h3>Наша команда</h3>
+          <ul>
+            <li>
+              <img src="images/team_photo_1.jpg">
+              <p class="size_1">Маргарита Анохина<p>
+              <p>
+                дизайнер,
+                <br>
+                основатель мастерской,
+                <br>
+                автор всех работ.
+              </p>
+            </li>
+            <li>
+              <img src="images/team_photo_2.jpg">
+              <p class="size_1">Дмитрий Анохин<p>
+              <p>
+                фотограф,
+                <br>
+                а также снимает
+                <br>
+                видео-ролики.
+              </p>
+            </li>
+            <li>
+              <img src="images/team_photo_3.jpg">
+              <p class="size_1">Анна Сентякова<p>
+              <p>
+                копирайтер,
+                <br>
+                придумает любой текст
+                <br>
+                поздравления и даже в стихах.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="contacts" class="centered">
+          <div class="address">
+            <div class="address_box">
+              <h3>Контакты</h3>
+              <p class="size_1">
+                г. Ульяновск, ул. Гагарина 1.
+                <br>
+                <a href="mailto:anokhinarita@mail.ru">anokhinarita@mail.ru</a>
+                <br>
+                <a href="http://vk.com/artdecor_pro" target="_blank">vk.com / artdecor_pro</a>
+                <br>
+                <a href="http://instagram.com/anokhinarita" target="_blank">instagram.com / anokhinarita</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="personal_contacts">
+            <ul>
+              <li>
+                <span class="size_1">
+                  Маргарита Анохина
+                  <br><br>
+                  +7 (937) 879-85-75
+                </span>
+                <br>
+                <a href="http://vk.com/anokhinarita" target="_blank">vk.com / anokhinarita</a>
+                <br>
+                <a href="http://instagram.com/anokhinarita" target="_blank">instagram.com / anokhinarita</a>
+              </li>
+              <li>
+                <span class="size_1">
+                  Дмитрий Анохин
+                  <br><br>
+                  +7 (927) 812-22-75
+                </span>
+                <br>
+                <a href="http://vk.com/anokhindimas" target="_blank">vk.com / anokhindimas</a>
+                <br>
+                <a href="http://youtube.com/anokhindimas" target="_blank">youtube.com / anokhindimas</a>
+              </li>
+              <li>
+                <span class="size_1">
+                  Анна Сентякова
+                  <br><br>
+                  +7 (922) 244-93-22
+                </span>
+                <br>
+                <a href="http://vk.com/id3086769" target="_blank">vk.com / id3086769</a>
+                <br>
+                <a href="mailto:averia56@mail.ru">averia56@mail.ru</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="socials">
+            <a class="fa fa-vk button vk" href="http://vk.com/artdecor_pro" target="_blank"></a>
+            <p class="size_3">Следите за нами в соц. сетях.</p>
+            <a class="fa fa-instagram button inst" href="http://instagram.com/anokhinarita" target="_blank"></a>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- .wrapper -->
+
+    <footer>
+      <div class="border"></div>
+      <div class="inner size_small">
+        <div>
+          <ul>
+            <li><a href="http://artdecor.pro">Главная</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Политика конфидециальности</a></li>
+          </ul>
+          <p class="company size_2">Мастреская новогодних подарков<br>дизайнера Анохиной Маргариты.</p>
+          <p>Понравился сайт?<br><a href="http://artdecor.pro/newyear" rel="sidebar" onclick="addBookmark()">Добавьте сайт в закладки</a></p>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; Copyright 2014г.
+            <br>
+            Все права защищены. Компания АртДекорПро.
+            <br>
+            Копирование материалов разрешено, при обязательном указании ссылки на источник.
+          </p>
+          <p>
+            Дизайн сайта:
+            <br>
+            <a class="regular" href="http://vk.com/anokhindimas">Дмитрий Анохин</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <div class="response hidden">
+      <div class="popup">
+        <p class="thanks">Спасибо за заказ!<br>Наш менеджер свяжется с вами и уточнит все детали.</p>
+        <a class="close"></a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+/* line 1, ../sass/buttons.scss */
+.button_box {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 1em;
+}
+
+/* line 9, ../sass/buttons.scss */
+.button, button {
+  padding: 0.6em 0.5em 0.3em;
+  border-radius: 0.25em;
+  display: inline-block;
+  text-transform: uppercase;
+  top: -0.08em;
+  font-size: 1.32em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 50ms ease-out 0s;
+}
+/* line 21, ../sass/buttons.scss */
+.button.vk, button.vk {
+  background-color: #0066cc;
+  text-decoration: none;
+  font-size: 3em;
+  color: white !important;
+  padding: 0.3em 0;
+  width: 1.6em;
+  top: -0.04em;
+  box-shadow: 0 0.08em 0 #003399;
+}
+/* line 31, ../sass/buttons.scss */
+.button.vk:hover, button.vk:hover {
+  top: 0.02em;
+  box-shadow: 0 0.02em 0 #003399;
+}
+/* line 37, ../sass/buttons.scss */
+.button.inst, button.inst {
+  background-color: #ff9900;
+  text-decoration: none;
+  font-size: 3em;
+  color: white !important;
+  padding: 0.3em 0;
+  width: 1.6em;
+  top: -0.04em;
+  box-shadow: 0 0.08em 0 #cc6600;
+}
+/* line 47, ../sass/buttons.scss */
+.button.inst:hover, button.inst:hover {
+  top: 0.02em;
+  box-shadow: 0 0.02em 0 #cc6600;
+}
+/* line 53, ../sass/buttons.scss */
+.button.yellow, button.yellow {
+  color: #333333;
+  background-color: yellow;
+  box-shadow: 0 0.16em 0 #ffcc00;
+}
+/* line 58, ../sass/buttons.scss */
+.button.yellow:hover, button.yellow:hover {
+  top: 0.04em;
+  box-shadow: 0 0.04em 0 #ffcc00;
+}
+/* line 64, ../sass/buttons.scss */
+.button.green, button.green {
+  background-color: #66cc00;
+  box-shadow: 0 0.16em 0 #009900;
+}
+/* line 68, ../sass/buttons.scss */
+.button.green:hover, button.green:hover {
+  top: 0.04em;
+  box-shadow: 0 0.04em 0 #009900;
+}
+/* line 74, ../sass/buttons.scss */
+.button.blue, button.blue {
+  background-color: #0099cc;
+  box-shadow: 0 0.16em 0 #0066cc;
+}
+/* line 78, ../sass/buttons.scss */
+.button.blue:hover, button.blue:hover {
+  top: 0.04em;
+  box-shadow: 0 0.04em 0 #0066cc;
+}

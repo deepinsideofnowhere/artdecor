@@ -1,0 +1,83 @@
+.button_box {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 1em;
+}
+
+.button, button {
+  padding: 0.6em 0.5em 0.3em;
+  border-radius: 0.25em;
+  display: inline-block;
+  text-transform: uppercase;
+  top: -0.08em;
+  font-size: 1.32em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 50ms ease-out 0s;
+
+  &.vk {
+    background-color: #0066cc;
+    text-decoration: none;
+    font-size: 3em;
+    color: white !important;
+    padding: 0.3em 0;
+    width: 1.6em;
+    top: -0.04em;
+    box-shadow: 0 0.08em 0 #003399;
+
+    &:hover {
+      top: 0.02em;
+      box-shadow: 0 0.02em 0 #003399;
+    }
+  }
+
+  &.inst {
+    background-color: #ff9900;
+    text-decoration: none;
+    font-size: 3em;
+    color: white !important;
+    padding: 0.3em 0;
+    width: 1.6em;
+    top: -0.04em;
+    box-shadow: 0 0.08em 0 #cc6600;
+
+    &:hover {
+      top: 0.02em;
+      box-shadow: 0 0.02em 0 #cc6600;
+    }
+  }
+
+  &.yellow {
+    color: #333333;
+    background-color: yellow;
+    box-shadow: 0 0.16em 0 #ffcc00;
+
+    &:hover {
+      top: 0.04em;
+      box-shadow: 0 0.04em 0 #ffcc00;
+    }
+  }
+
+  &.green {
+    background-color: rgb(102, 204, 0);
+    box-shadow: 0 0.16em 0 #009900;
+
+    &:hover {
+      top: 0.04em;
+      box-shadow: 0 0.04em 0 #009900;
+    }
+  }
+
+  &.blue {
+    background-color: rgb(0, 153, 204);
+    box-shadow: 0 0.16em 0 #0066cc;
+
+    &:hover {
+      top: 0.04em;
+      box-shadow: 0 0.04em 0 #0066cc;
+    }
+  }
+}
