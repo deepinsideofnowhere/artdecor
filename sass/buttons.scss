@@ -16,7 +16,7 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: all 50ms ease-out 0s;
+  transition: top 50ms ease-out 0s, box-shadow 50ms ease-out 0s !important;
 
   &.vk {
     background-color: #0066cc;
